@@ -23,7 +23,7 @@ class Acessorio(models.Model):
     class Meta:
         verbose_name = "acessório"
         verbose_name_plural = "acessórios"
- 
+
    
 class Cor(models.Model):
     descricao = models.CharField(max_length=100)
@@ -45,6 +45,7 @@ class Modelo(models.Model):
     class Meta:
         verbose_name = "modelo"
         verbose_name_plural = "modelos"
+        
         
 class Veiculo(models.Model):
     marca = models.ForeignKey(
