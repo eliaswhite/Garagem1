@@ -48,6 +48,7 @@ class Modelo(models.Model):
         
         
 class Veiculo(models.Model):
+    acessorios = models.ManyToManyField(Acessorio, related_name="veiculos")
     marca = models.ForeignKey(
         Marca, on_delete=models.PROTECT, related_name="veiculos"
     )
